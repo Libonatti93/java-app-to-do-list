@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Nova Tarefa</title>
+</head>
+<body>
+<h1>Nova Tarefa</h1>
+<form th:action="@{/tasks}" th:object="${task}" method="post">
+    <label for="title">Título:</label>
+    <input type="text" id="title" name="title" th:field="*{title}"/><br/>
+    <label for="description">Descrição:</label>
+    <textarea id="description" name="description" th:field="*{description}"></textarea><br/>
+    <label for="completed">Concluída:</label>
+    <input type="checkbox" id="completed" name="completed" th:field="*{completed}"/><br/>
+    <button type="submit">Salvar</button>
+</form>
+<a href="/tasks">Cancelar</a>
+</body>
+</html>

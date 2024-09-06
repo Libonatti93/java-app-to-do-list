@@ -1,0 +1,34 @@
+Simple to-do list application in Java using Spring Boot for the backend and Thymeleaf for the frontend. The application will have the following functionalities:
+Task CRUD: Create, read, update and delete tasks.
+Simple Web Interface: To manage tasks.
+H2 Database: To store tasks.
+Project Structure
+Task: Class that represents a task.
+TaskRepository: Interface that manages the persistence of tasks.
+TaskController: Controller that manages HTTP requests related to tasks.
+Thymeleaf Templates: For the user interface.
+Steps to Create the Project
+Create the Project with Spring Boot:
+
+Use Spring Initializr to generate the project with the dependencies:
+Spring Web
+Spring Data JPA
+H2 Database
+Thymeleaf
+Package Structure:
+
+com.example.todolist (main package)
+controller (for the controller)
+model (for the Task class)
+repository (for the repository)
+
+Code Explanation
+Task: Class that represents the tasks in the application. Each task has a title, description, and completion status.
+
+TaskRepository: JPA interface to perform CRUD operations on the database for tasks.
+
+TaskController: Controller that manages the routes to create, view, update, and delete tasks.
+
+Thymeleaf Templates: Used to render the user interface.
+
+H2 Database: In-memory database used for data storage during development.
